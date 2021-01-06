@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>류정수_test01</title>	
+</head>
+<body>
+	<form method="post" name="frm" action="">
+	원하는 구구단<input type="text" id="num" size=5>
+	<button type="button" onClick="myFunction()">구구단 출력</button>
+	</form>
+<p id="area"></p>
+	<script type="text/JavaScript">
+		function myFunction(){
+			var gugu =document.getElementById("num").value;
+			var gugudan="";
+			for(i=1; i<=9 ; i++)
+			gugudan+=gugu+"*"+i+"="+(gugu*i)+"<br>";
+		document.getElementById("area").innerHTML=gugudan;	}
+
+</script>
+</body>
+</html>

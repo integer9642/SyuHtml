@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>류정수_test01</title>	
+</head>
+<body>
+<script type="text/javascript">
+var win;
+function open_window(){
+	var url=prompt("윈도우 브라우저에서 접속할 url을 입력해 주세요 :","http://www.naver.com");
+	if(url)
+		win=window.open(url);
+}
+
+</script>
+<button type = "button" onClick="open_window();"> 새 윈도우창 열기</button>
+<button type = "button" onClick="win_close();"> 윈도우창 닫기 </button>
+</body>
+</html>

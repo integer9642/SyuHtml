@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>류정수_test01</title>	
+</head>
+<body>
+	<form method="post" name="frm" action="">
+	숫자1 : <input onblur="myFunction()" type="text" name="num" id="num1"/><br>
+	숫자2 : <input onblur="myFunction()" type="text" name="num" id="num2"/><br>
+	숫자3 : <input onblur="myFunction()" type="text" name="num" id="num3"/><br>
+합 계 : <input type="text" name="total" id="total" >		
+</form>
+	<script type="text/JavaScript">
+	function myFunction(){
+		var arr = new Array();
+		arr = document.getElementsByName("num");
+		var tot=0;
+		for(var i=0; i<arr.length;i++){
+			if(parseInt(arr[i].value))
+				tot += parseInt(arr[i].value);
+		}
+		var dom=document.getElementById("total");
+		dom.value=tot;
+	}
+
+</script>
+</body>
+</html>

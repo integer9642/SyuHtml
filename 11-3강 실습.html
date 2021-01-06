@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+	<script type="text/javascript">
+		var i=0;
+		var sum=0;
+		var num=prompt("원하는 숫자 :","10");
+		var n=parseInt(num);
+
+		while(i<n){
+			i++;
+			sum+=i;
+		}
+
+		document.write("<table border=1");
+		document.write("<tr><td bgcolor=red> 1-"+n +"까지 합계");
+		document.write("<td bgcolor=blue>"+sum);
+		document.write("</table>");
+	</script>
+</body>
+</html>
